@@ -1,0 +1,110 @@
+/* Style for the slider message */
+.slider-container {
+    position: relative;
+    width: 100%;
+    background-color: #101010;
+    padding: 15px 0;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    animation: slide 30s infinite linear;
+}
+
+.slider p {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    padding: 0 15px;
+}
+
+/* Sliding animation with pause */
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+
+    20% {
+        transform: translateX(0);
+    }
+
+    60% {
+        transform: translateX(0);
+    }
+
+    80% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Style for the inventory section */
+.inventory-page {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f8f8f8;
+    /* Light background */
+}
+
+.inventory-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Three cards per row */
+    gap: 30px;
+    /* Increased space between cards */
+    margin-top: 40px;
+    padding: 0 20px;
+}
+
+.inventory-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.inventory-card h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.inventory-card p {
+    font-size: 18px;
+    color: #ba1818;
+    margin-top: 10px;
+}
+
+/* Hover effects */
+.inventory-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design: Stack cards on smaller screens */
+@media (max-width: 768px) {
+    .inventory-container {
+        grid-template-columns: 1fr 1fr;
+        /* Two cards per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .inventory-container {
+        grid-template-columns: 1fr;
+        /* One card per row */
+    }
+}

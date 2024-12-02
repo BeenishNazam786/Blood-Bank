@@ -1,0 +1,54 @@
+.donor-list-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.donor-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.donor-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.donor-card h3 {
+    margin-top: 0;
+    color: red;
+}
+
+.donor-card p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.donor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.donor-card strong {
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .donor-card {
+        width: 100%;
+    }
+}

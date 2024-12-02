@@ -1,0 +1,65 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    /* Distribute space between logo and links */
+    align-items: center;
+    /* Vertically center items */
+    padding: 20px;
+    background-color: #ba1818;
+    height: 60px
+}
+
+.logo-container {
+    display: flex;
+    /*flex-direction: column;
+    /* Align items vertically (logo above text) */
+    align-items: center;
+    /* Center both logo and text horizontally */
+    padding-top: 10px;
+}
+
+.logo {
+
+    height: 80px;
+    width: 50px;
+}
+
+.logo-text {
+    font-size: 1.2 rem;
+    /* Adjust font size for the text */
+    color: white;
+    /* Text color */
+    font-weight: bold;
+    /*margin-top: 10px;*/
+    padding-left: 15px;
+    padding-bottom: 10px;
+    /* Space between the logo and text */
+}
+
+
+
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: right;
+    /* Align links to the right */
+    gap: 40px;
+    /* Add space between the links */
+}
+
+.nav-links a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    /* Link color */
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav-links a:hover {
+    color: #f0f0f0;
+    text-decoration: underline;
+    /* Link color on hover */
+}

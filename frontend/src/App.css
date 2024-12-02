@@ -1,0 +1,40 @@
+/* Content container for both image and content */
+.main-container {
+  display: flex;
+  /* Use flexbox to align items horizontally */
+  height: 100vh;
+  /* Full viewport height */
+  width: 100%;
+  /* Full width */
+}
+
+/* Left image container */
+.left-image-container {
+  flex: 1;
+  height: 100vh;
+  /* Full height of the viewport */
+}
+
+.left-image {
+  padding-top: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 80px;
+  width: 100%;
+  /* Full width of the container */
+  height: 90%;
+  /* Full height of the container */
+  object-fit: cover;
+  /* Ensure the image covers the container area */
+}
+
+/* Right content container */
+.right-content {
+  flex: 1;
+  /* Takes up the remaining 50% of the width */
+
+  padding-bottom: 50px;
+  /* Optional: Padding for spacing */
+
+  /* Allows scrolling if content exceeds the viewport height */
+}
