@@ -10,7 +10,7 @@ const DonorList = () => {
     useEffect(() => {
         const fetchDonors = async () => {
             try {
-                const response = await axios.get("http://localhost:5000/api/donors");
+                const response = await axios.get("https://bb-g6re.onrender.com/api/donors");
                 setDonors(response.data);  // Set the fetched donors data
                 setLoading(false);  // Stop the loading state
             } catch (error) {
