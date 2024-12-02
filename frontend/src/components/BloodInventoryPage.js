@@ -10,7 +10,7 @@ const BloodInventoryPage = () => {
     useEffect(() => {
         const fetchInventory = async () => {
             try {
-                const response = await axios.get("http://localhost:5000/api/blood/inventory");
+                const response = await axios.get("https://bb-g6re.onrender.com/api/blood/inventory");
                 setInventory(response.data);
                 setLoading(false);
             } catch (error) {
