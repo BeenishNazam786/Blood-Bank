@@ -23,7 +23,7 @@ const DonorFormPage = () => {
     const registerDonor = async () => {
         try {
             const response = await axios.post(
-                "http://localhost:5000/api/donors/register",
+                "https://bb-g6re.onrender.com/api/donors/register",
                 donorData
             );
             console.log(response.data);
