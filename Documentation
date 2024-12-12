@@ -25,7 +25,6 @@ Fetches and displays donor data from the backend.
 Contact Information:
 Prominently displayed message for urgent contact related to blood requests
 
-
 Technical Highlights:
 Frontend:
 Built with React.js for dynamic UI updates and modular components.
