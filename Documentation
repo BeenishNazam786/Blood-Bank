@@ -7,7 +7,7 @@ Key Features:
 Homepage:
 Displays a welcoming message: "Donate Blood, Save Lives."
 Includes a call-to-action button for users to register as blood donors.
-A slider displaying an important contact message: "Contact here if you need blood."
+
 
 Donor Registration:
 A user-friendly form for individuals to register as blood donors.
@@ -17,7 +17,6 @@ Sends donor data to the backend and stores it in the database.
 Blood Inventory Management:
 Displays the current blood stock categorized by blood type.
 Each blood type is shown with the available quantity in a card-based layout.
-Responsive design ensures proper alignment and display on various devices.
 
 Donor List:
 Lists all registered donors with their details.
